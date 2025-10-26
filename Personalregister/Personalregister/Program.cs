@@ -29,7 +29,7 @@ namespace Personalregister
 
                 // 3️⃣ Lägg till dokumentet
                 collection.InsertOne(dokument);
-                Console.WriteLine("✅ En ny myra har lagts till i databasen!");
+                Console.WriteLine(" En ny myra har lagts till i databasen!");
 
                 // 4️⃣ Läs ut alla dokument
                 Console.WriteLine("\n📋 Alla myror i databasen:");
@@ -44,7 +44,7 @@ namespace Personalregister
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Fel vid anslutning eller databasoperation: {ex.Message}");
+                Console.WriteLine($" Fel vid anslutning eller databasoperation: {ex.Message}");
             }
 
             Console.WriteLine("\nTryck på valfri tangent för att avsluta...");
